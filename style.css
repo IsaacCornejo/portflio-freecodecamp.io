@@ -4,15 +4,12 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
-html, body{
-  width: 100%;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+::before, ::after {
+  box-sizing: border-box  ;
 }
 
-::before, ::after {
-  box-sizing: border-box ;
+html {
+  scroll-behavior: smooth;
 }
 
 a{
@@ -32,7 +29,7 @@ a{
   position: fixed;
   margin-top: 0px;
   margin-left: 0px;
-  width: 100vw;
+  width: 100%;
 }
 
 #navbar ul{
@@ -141,7 +138,7 @@ h1 {
 .contact ul {
   margin-top: 30px;
   list-style: none;
-  display: flex;flex-direction: column;
+  display: flex;
 }
 
 .contact ul li {
@@ -191,13 +188,4 @@ footer p {
   #navbar {
     justify-content: flex-end;
   }
-  
-  .contact ul {
-    flex-direction: row;
-  }
-
-  #navbar ul{
-    margin-right: 30px;
-  }
 }
-
