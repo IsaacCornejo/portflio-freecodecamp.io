@@ -5,11 +5,14 @@
 }
 
 ::before, ::after {
-  box-sizing: border-box  ;
+  box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+main {
   overflow-x: hidden;
 }
 
@@ -18,11 +21,9 @@ a{
   color: black;
 }
 
-#navbar {
-  background-color: #eee;
-}
 
 #navbar {
+  background-color: #eee;
   display: flex;
   justify-content: center;
   align-items: center ;
@@ -140,6 +141,7 @@ h1 {
   margin-top: 30px;
   list-style: none;
   display: flex;
+  flex-direction: column;
 }
 
 .contact ul li {
@@ -188,5 +190,12 @@ footer p {
 
   #navbar {
     justify-content: flex-end;
+  }
+
+  .contact ul {
+    margin-top: 30px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
   }
 }
